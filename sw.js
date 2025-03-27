@@ -1,5 +1,8 @@
 self.addEventListener('push', function(event) {
-    console.log(event);
-    
-    self.registration.showNotification('Hello world!', {})
+    const options = {
+      body: event.data.text(),
+    };
+    event.waitUntil(
+      self.registration.showNotification("Thông báo mới", options)
+    );
 })
