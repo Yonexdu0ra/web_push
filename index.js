@@ -15,11 +15,14 @@ webPush.setVapidDetails(
 
 
 const pushSubscription = {
-//   endpoint: "USER_SUBSCRIPTION_ENDPOINT",
-//   keys: {
-//     p256dh: "USER_PUBLIC_KEY",
-//     auth: "USER_AUTH_KEY",
-//   },
+  endpoint:
+    "https://fcm.googleapis.com/fcm/send/dI0H4bQt2s8:APA91bHpDTVWFDhoaSu3JkZWILgaWo5TKOxU2AMmXg8DEIS9gABdIFpdpjBStQsi96oCFLWdh_A6WjUHpyn5fW3zNNhpfZF4jYNIW4MX0ogL0srK7Zl-ABfWJFiWubxtTySSScHOdJQz",
+  expirationTime: null,
+  keys: {
+    p256dh:
+      "BKGEmnbHJivxeot3poKm7tFVo1kYhX1stJkplAVSGbe03StNDZjG9K1_NYwRJcNd9SB57QUwn_6Ro3b0_EfOk44",
+    auth: "paCf0DeqZfqtHvrxiNke2g",
+  },
 };
 
 webPush.sendNotification(pushSubscription, "Hello World!");

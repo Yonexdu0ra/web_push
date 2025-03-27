@@ -1,3 +1,5 @@
 self.addEventListener('push', function(event) {
-    self.registration.sendNotification('Hello World!', {});
+    console.log(event);
+    
+    self.registration.showNotification('Hello world!', {})
 })
